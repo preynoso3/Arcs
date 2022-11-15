@@ -7,4 +7,13 @@ def sum(*args):
 
 print(sum(2,3,4,5,64))
 
-# kwargs menas using key values(limitless)
+# kwargs means using key values(limitless) its a step beyond args 
+# kets and values represnted **
+def a_sum(**kwargs):
+  total = 0
+  for key, value in kwargs.items():
+    print(f'{key} = {value}')
+    total += value
+  return total
+
+print (a_sum(x=3, y=5, z=22))
